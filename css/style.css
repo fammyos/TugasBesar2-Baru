@@ -1,0 +1,196 @@
+/* CSS Variable */
+:root {
+    /* colors */
+    --primary: orange !important;
+    --secondary: #8a1fe5!important;
+    --grey:#697477!important;
+    --dark:#131314!important;
+
+    /* Font-family */
+    --txt:'Quicksand', sans-serif;
+    --logo:'Pacifico', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+/* Header */
+.navbar {
+    box-shadow: 1px 1px 5px var(--grey);
+}
+
+.logo {
+    font-size: 30px !important;
+    font-family: var(--logo);
+    color: var(--primary);
+}
+
+.logo:hover {
+    color: var(--grey);
+}
+
+.nav-link {
+    color: var(--dark);
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    font-size: 30px !important;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: orange;
+}
+
+/* Home */
+.home {
+    padding-top: 20px !important;
+}
+
+.btn:hover {
+    color: var(--secondary);
+}
+
+.about, .contact, .skills, .portfolio {
+    padding-top: 100px !important;
+}
+
+.social-media li, .foot-icon li {
+    list-style: none;
+}
+
+.social-media li a {
+    color: var(--grey);
+}
+
+.social-media li a:hover {
+    color: var(--primary);
+}
+
+.social-media i, .foot-icon i{
+    font-size: 36px;
+}
+
+.bxl-twitter::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    transform: translate(-500%,35%);
+}
+
+.theme-text {
+    color: var(--primary);
+}
+
+#person-img {
+    background-image: url(../assets/img/kakang.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 408px;
+    background-position-x: 50%;
+}
+
+#person-img::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    background-color: var(--primary);
+    border-radius: 30% 70% 70% 30%/30% 40% 60% 70%;
+    z-index: -1;
+    transform: translateX(17%);
+}
+
+/* About */
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-family: var(--logo);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 20px;
+    color: var(--grey);
+}
+
+/* Skills */
+.border {
+    border-radius: 10px;
+}
+
+.progress-con {
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--grey);
+}
+
+.progress {
+    height: 10px !important;
+}
+
+.progress-bar {
+    background-image: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+/* Portfolio */
+.card-img-top:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* .card {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 .2rem rgba(255, 46, 133, .25) !important;
+    border: solid var(--primary) !important;
+} */
+
+.card-text {
+    color: var(--secondary) !important;
+}
+
+/* Contact */
+.form-control:focus {
+    color: #495057;
+    background-color: #ffffff;
+    border-color: var(--primary) !important;
+    outline: none;
+    box-shadow: 0 0 0 .2rem rgba(255, 46, 133, .25) !important;
+    border: solid var(--primary) !important;
+}
+
+/* Footer */
+.copyright {
+    color: var(--grey);
+}
+
+.foot-icon a {
+    color: var(--grey);
+}
+
+.foot-icon a:hover {
+    color: orange;
+}
+

@@ -1,0 +1,4 @@
+Framework : Bootstrap Versi 4.5.3 ("https://getbootstrap.com/docs/4.5/getting-started/introduction/")
+Icon : Menggunakan dari Box Icon ("https://boxicons.com/")
+Font : Menggunakan dari Google Font ("https://fonts.google.com/")
+Image : Menggunakan Foto Sendiri dan di Edit Menggunakan Photoshop 
